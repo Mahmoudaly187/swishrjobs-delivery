@@ -1,0 +1,51 @@
+{
+  "task": "first real use of the mailschema package, MAP 0.3",
+  "package": { "name": "mailschema", "version": "0.3.2" },
+  "runtime": { "node": "v24.21.0", "npm": "11.21.0" },
+  "type": {
+    "id": "https://mailschema.org/types/publication-approval",
+    "version": "0.1",
+    "contractDigest": "sha-256:de91a49de4cba91209be253456e7c56709791fff877a060560d4eada0cc9468c",
+    "contractSource": "https://mailschema.org/artifacts/map-0.3/contracts/publication-approval-0.1.json"
+  },
+  "description": {
+    "@id": "urn:uuid:6f0b2d84-1c7e-4a52-9b3f-2e7a5d10c948",
+    "digest": "sha-256:e53232c0cd78a5686e480b4aad6c54387dc4f998b5161710141aa5e4027e6ef0",
+    "ownWork": "written for this run from the contract's detailsSchema; not copied from the Registry example"
+  },
+  "commands": [
+    "npx mailschema@0.3.2 contract contract.json",
+    "npx mailschema@0.3.2 description map-0.3-description.json --contract contract.json"
+  ],
+  "valid_output": [
+    "Valid MAP 0.3 description urn:uuid:6f0b2d84-1c7e-4a52-9b3f-2e7a5d10c948",
+    "sha-256:e53232c0cd78a5686e480b4aad6c54387dc4f998b5161710141aa5e4027e6ef0"
+  ],
+  "broken_field": {
+    "path": "/details/content/digest",
+    "how": "shortened the digest to 63 hex characters",
+    "command": "npx mailschema@0.3.2 description broken.json --contract contract.json",
+    "exit_code": 1,
+    "stderr": "/details/content/digest: must match pattern \"^sha-256:[0-9a-f]{64}$\""
+  },
+  "minutes_install_to_valid": 8,
+  "slowest_step": "the destinations if/then conditional: only visibility=restricted requires audience.id and audience.revision",
+  "finding": {
+    "kind": "behaviour gap",
+    "summary": "without --contract the CLI reports Valid even when type.contractDigest names a non-existent contract",
+    "repro": [
+      "set type.contractDigest to sha-256:0000...0000",
+      "run npx mailschema@0.3.2 description bad.json",
+      "exits 0, prints 'Valid MAP 0.3 description ...'"
+    ],
+    "with_contract": "npx mailschema@0.3.2 description bad.json --contract contract.json exits 1 with '/type/contractDigest: does not match'"
+  },
+  "checked_and_passed": [
+    "wrong type against right contract -> '/type: names ... not this contract'",
+    "wrong profile -> '/profile: must be \"https://mailschema.org/profiles/map/0.3\"'",
+    "restricted destination without audience -> required property errors",
+    "duplicate JSON member -> 'Invalid MAP JSON at offset 977: duplicate member \"summary\".'",
+    "document over 64 KiB -> 'The JSON exceeds 65536 bytes.'"
+  ],
+  "one_change": "name what was checked on the success line, e.g. '(core rules only; contract not checked)' when --contract is absent"
+}

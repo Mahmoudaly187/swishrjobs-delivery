@@ -1,0 +1,55 @@
+{
+  "@context": "https://mailschema.org/contexts/map-0.3.jsonld",
+  "@type": "MailAction",
+  "profile": "https://mailschema.org/profiles/map/0.3",
+  "type": {
+    "id": "https://mailschema.org/types/publication-approval",
+    "version": "0.1",
+    "contractDigest": "sha-256:de91a49de4cba91209be253456e7c56709791fff877a060560d4eada0cc9468c"
+  },
+  "@id": "urn:uuid:6f0b2d84-1c7e-4a52-9b3f-2e7a5d10c948",
+  "issuedAt": "2026-11-01T04:10:00Z",
+  "expiresAt": "2026-11-02T04:10:00Z",
+  "inLanguage": "en",
+  "service": {
+    "id": "https://swishrjobs.com",
+    "tenant": "urn:swishrjobs:tenant:swishr"
+  },
+  "recipient": "ops@swishrjobs.com",
+  "subject": {
+    "id": "urn:swishrjobs:object:release-note-14",
+    "title": "Publish the SwishrJobs reliability page update"
+  },
+  "terms": {
+    "id": "urn:swishrjobs:proposal:rn14",
+    "version": "rn14-r2"
+  },
+  "human": {
+    "url": "https://swishrjobs.com/approve/rn14"
+  },
+  "details": {
+    "summary": "Publish revision r2 of the SwishrJobs reliability page, which reports the latest capability benchmark run.",
+    "requester": "SwishrJobs release desk",
+    "content": {
+      "id": "urn:swishrjobs:content:reliability-page",
+      "revision": "r2",
+      "title": "SwishrJobs reliability",
+      "digest": "sha-256:9c1f4b7a0d3e5821ab64c0f9e7d2158340ab6cf1d9e8023f5a7c4b1e6d908f23"
+    },
+    "destinations": [
+      {
+        "id": "https://swishrjobs.com/reliability",
+        "account": "urn:swishrjobs:account:swishr",
+        "visibility": "public"
+      }
+    ],
+    "schedule": {
+      "mode": "immediate"
+    }
+  },
+  "operations": [
+    { "id": "approve" },
+    { "id": "decline" },
+    { "id": "request-changes" }
+  ]
+}
