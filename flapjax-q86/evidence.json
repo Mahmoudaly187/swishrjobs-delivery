@@ -1,0 +1,287 @@
+{
+ "window": "2026-11-01 COT (UTC-5)",
+ "token": "0x90c8889f428F9Ebb77BB8f15CAD3a50a9aC680df",
+ "treasury": "0x7C34E9e21eE28A49Ff0b84B61774119E6633359f",
+ "first_block": 130989237,
+ "last_block": 131181186,
+ "transfers": [
+  {
+   "tx": "0x359f40e334ebc0cf3477cf465bb215c12d68e233829abbcc622ce200fed0a16c",
+   "blk": 131058409,
+   "to": "0xdf4ff9d2f45f99f11a90b16f277d4b7edddb72a5",
+   "amt": 24999.999999999996,
+   "logIndex": 369,
+   "ts": 1793540338
+  },
+  {
+   "tx": "0xe33c65122ca18b07afa19bc2175ee9c756f11517bf719bc41e472c5167673801",
+   "blk": 131058441,
+   "to": "0xabc2c3daffa4c1963299da225c25f2aa7d4ddf62",
+   "amt": 24999.999999999996,
+   "logIndex": 455,
+   "ts": 1793540352
+  },
+  {
+   "tx": "0x67caa95b779edd611a3d6fc2168e94c5380a0413916295e36e22d1d8c3120b79",
+   "blk": 131058476,
+   "to": "0xfb200657f7266157a45dfcc6c09690726daa24e6",
+   "amt": 24999.999999999996,
+   "logIndex": 397,
+   "ts": 1793540368
+  },
+  {
+   "tx": "0x2193304d6a26d776a2cef575f0b743f810ef9a4de7aa4ad40fef3af3ef4629d1",
+   "blk": 131058510,
+   "to": "0xeba13671a2f1993ee26a4e286db6e491fa5c99bc",
+   "amt": 24999.999999999996,
+   "logIndex": 409,
+   "ts": 1793540383
+  },
+  {
+   "tx": "0x81c497dc743236d0d9fdcc9c121b178cb8814d66a48593f973ac6a84c0841f0c",
+   "blk": 131058547,
+   "to": "0xca58696564492ef9c3229c89072365b253bda246",
+   "amt": 99999.99999999999,
+   "logIndex": 287,
+   "ts": 1793540400
+  },
+  {
+   "tx": "0x14380a49d87c6b475b3ff959e804189aa8205b6fad3e4a99c5293d9015991c90",
+   "blk": 131058588,
+   "to": "0xa15c58e7008fc7a0331cfcc86a28af99fd21b93c",
+   "amt": 99999.99999999999,
+   "logIndex": 1123,
+   "ts": 1793540418
+  },
+  {
+   "tx": "0x603db27dd58cbd1561b6c8af41552cdf6e1cdcc100ffe0bc730c6d2e03e8b90c",
+   "blk": 131073418,
+   "to": "0xa15c58e7008fc7a0331cfcc86a28af99fd21b93c",
+   "amt": 24999.999999999996,
+   "logIndex": 258,
+   "ts": 1793547094
+  },
+  {
+   "tx": "0xe92e94144472a1b7c6cedefd2f64d6c549037196b65c65399e72d7f02e72156e",
+   "blk": 131080128,
+   "to": "0xfdf05af8ddce3621f01713e01721d6e9ad702ea8",
+   "amt": 24999.999999999996,
+   "logIndex": 246,
+   "ts": 1793550114
+  },
+  {
+   "tx": "0xab410d4b5c60288fa44aa09a5119ee42650785eaf9ae1aa42ab4c0874335342a",
+   "blk": 131088758,
+   "to": "0xec2f03b4baa1dc49559e56a54f84a2e9f2a30a91",
+   "amt": 24999.999999999996,
+   "logIndex": 173,
+   "ts": 1793553999
+  },
+  {
+   "tx": "0x86cd9655cead2eb372ec3874c0a136b2d38110bd7ab25f32f15bce6ca42650b4",
+   "blk": 131120212,
+   "to": "0xe8797a6bb4693674d78e933e85cb159a0219d03b",
+   "amt": 24999.999999999996,
+   "logIndex": 212,
+   "ts": 1793568156
+  },
+  {
+   "tx": "0x96100d7abf13ab50a08b0baac1e94de20d8c725d8fc2e9b9692a62e42b3fffa3",
+   "blk": 131145205,
+   "to": "0x16fed0d8d3777a002b569c649ffff37d6d9303c9",
+   "amt": 250000.0,
+   "logIndex": 2486,
+   "ts": 1793579404
+  },
+  {
+   "tx": "0x4bab3fe13c1e9904b68d574659eac8423fe564c09dbb1bfcf51bfbedbd65c19f",
+   "blk": 131145277,
+   "to": "0x4a4b89974b5cda4cbd9cd9bc84b5d2dbfd7018e6",
+   "amt": 250000.0,
+   "logIndex": 83,
+   "ts": 1793579437
+  },
+  {
+   "tx": "0x45b002a93bc098497d466f258ef9ecd1c2216a851ce7a5b2abee4a1137a6cb09",
+   "blk": 131145340,
+   "to": "0xf325475201477745f3956f815edb50e8c16426ba",
+   "amt": 250000.0,
+   "logIndex": 191,
+   "ts": 1793579465
+  },
+  {
+   "tx": "0x805bc502e5c1145f57e798433b4cf5caa915d872ec9164b7ff35b22db50deae6",
+   "blk": 131145404,
+   "to": "0x655186eb71353ba93063742fb42c2bae59af196e",
+   "amt": 250000.0,
+   "logIndex": 189,
+   "ts": 1793579494
+  },
+  {
+   "tx": "0x784c7d55f318c6a3a918549fbfe49e4786af4da4bbb3a7a51f042a6d23c25808",
+   "blk": 131145806,
+   "to": "0x97cd18b8bbb629b17675d868259ea84c0a2a5a9c",
+   "amt": 3000000.0,
+   "logIndex": 148,
+   "ts": 1793579675
+  },
+  {
+   "tx": "0xd99981608b6990fe206b111290e2a77b84140132cd8f91e351cf4e94d47ca947",
+   "blk": 131145869,
+   "to": "0x4644f7b8679bf0b6f22e69408e2272e9f4417b45",
+   "amt": 250000.0,
+   "logIndex": 373,
+   "ts": 1793579703
+  },
+  {
+   "tx": "0xa8ef0a78354b5ece0cf5dfcce06ad3879bfb6fc3bee82210d664715ed357c193",
+   "blk": 131145936,
+   "to": "0xca58696564492ef9c3229c89072365b253bda246",
+   "amt": 300000.0,
+   "logIndex": 783,
+   "ts": 1793579733
+  },
+  {
+   "tx": "0x056cf562378d5d859f422e4d2d92667570a37ac261b504f0c2c9efa935cf8f74",
+   "blk": 131146078,
+   "to": "0xeba13671a2f1993ee26a4e286db6e491fa5c99bc",
+   "amt": 300000.0,
+   "logIndex": 126,
+   "ts": 1793579797
+  },
+  {
+   "tx": "0xd9ab8bc50bed3bfa44a4e754407dec81e4fe7f2ac32c366009e3bcfb4e1702d1",
+   "blk": 131168762,
+   "to": "0xb1051c2b38ad3efefc7ff5fb61d7068bd031b81e",
+   "amt": 24999.999999999996,
+   "logIndex": 407,
+   "ts": 1793590007
+  },
+  {
+   "tx": "0x69e239a56715d6ae0dac697b88877a0a9514f64a0ccd8ee95bb8bce91c9b8c0e",
+   "blk": 131175568,
+   "to": "0x3aeae5f742e34f94db19b6c494072957633fa7ca",
+   "amt": 2000000.0,
+   "logIndex": 395,
+   "ts": 1793593070
+  }
+ ],
+ "total_flapjax": 7275000.0,
+ "distinct_recipients": 17,
+ "funders": {
+  "0x16fed0d8d3777a002b569c649ffff37d6d9303c9": {
+   "balance_bnb": 0.0,
+   "first_fund_block": null,
+   "funder": null
+  },
+  "0x3aeae5f742e34f94db19b6c494072957633fa7ca": {
+   "balance_bnb": 0.0,
+   "first_fund_block": null,
+   "funder": null
+  },
+  "0x4644f7b8679bf0b6f22e69408e2272e9f4417b45": {
+   "balance_bnb": 0.0,
+   "first_fund_block": null,
+   "funder": null
+  },
+  "0x4a4b89974b5cda4cbd9cd9bc84b5d2dbfd7018e6": {
+   "balance_bnb": 0.0,
+   "first_fund_block": null,
+   "funder": null
+  },
+  "0x655186eb71353ba93063742fb42c2bae59af196e": {
+   "balance_bnb": 0.0,
+   "first_fund_block": null,
+   "funder": null
+  },
+  "0x97cd18b8bbb629b17675d868259ea84c0a2a5a9c": {
+   "balance_bnb": 0.0,
+   "first_fund_block": null,
+   "funder": null
+  },
+  "0xa15c58e7008fc7a0331cfcc86a28af99fd21b93c": {
+   "balance_bnb": 0.0,
+   "first_fund_block": null,
+   "funder": null
+  },
+  "0xabc2c3daffa4c1963299da225c25f2aa7d4ddf62": {
+   "balance_bnb": 0.0,
+   "first_fund_block": null,
+   "funder": null
+  },
+  "0xb1051c2b38ad3efefc7ff5fb61d7068bd031b81e": {
+   "balance_bnb": 0.0,
+   "first_fund_block": null,
+   "funder": null
+  },
+  "0xca58696564492ef9c3229c89072365b253bda246": {
+   "balance_bnb": 0.000463392,
+   "first_fund_block": 130097514,
+   "funder": {
+    "funder": "0x7c34e9e21ee28a49ff0b84b61774119e6633359f",
+    "tx": "0x87443eff758296585f6d6eb7b68800ea6c73f143239e60541a6ef5b1f072d456",
+    "block": 130097514,
+    "value_bnb": 0.0005,
+    "ts": 1793107746
+   }
+  },
+  "0xdf4ff9d2f45f99f11a90b16f277d4b7edddb72a5": {
+   "balance_bnb": 0.0,
+   "first_fund_block": null,
+   "funder": null
+  },
+  "0xe8797a6bb4693674d78e933e85cb159a0219d03b": {
+   "balance_bnb": 0.0,
+   "first_fund_block": null,
+   "funder": null
+  },
+  "0xeba13671a2f1993ee26a4e286db6e491fa5c99bc": {
+   "balance_bnb": 0.0,
+   "first_fund_block": null,
+   "funder": null
+  },
+  "0xec2f03b4baa1dc49559e56a54f84a2e9f2a30a91": {
+   "balance_bnb": 0.0,
+   "first_fund_block": null,
+   "funder": null
+  },
+  "0xf325475201477745f3956f815edb50e8c16426ba": {
+   "balance_bnb": 0.0004756194,
+   "first_fund_block": 130818784,
+   "funder": {
+    "funder": "0x3ce2c77570a651bd344beb3d3d610aa0548c8ac8",
+    "tx": "0xb97bc7b736553fcb93c8e65dea438acc126bdfd4abad9963559ef17391348792",
+    "block": 130818784,
+    "value_bnb": 0.0002,
+    "ts": 1793432475
+   }
+  },
+  "0xfb200657f7266157a45dfcc6c09690726daa24e6": {
+   "balance_bnb": 0.0005,
+   "first_fund_block": 126835408,
+   "funder": {
+    "funder": "0x7c34e9e21ee28a49ff0b84b61774119e6633359f",
+    "tx": "0xa3d7042983f4f2352b9b8f324414688db10887e2b2b2a125deca9a8bec6624e7",
+    "block": 126835408,
+    "value_bnb": 0.0005,
+    "ts": 1791638731
+   }
+  },
+  "0xfdf05af8ddce3621f01713e01721d6e9ad702ea8": {
+   "balance_bnb": 0.0,
+   "first_fund_block": null,
+   "funder": null
+  },
+  "_treasury": {
+   "first_fund_block": 123473817,
+   "funder": {
+    "funder": "0x5ba434b40be6cfc7033bf8d4545320fa609a4268",
+    "tx": "0xe0f7aeeedd38558ba63a596b8eb6b73e53af63d6282fc3e370160f3b2109bfd0",
+    "block": 123473817,
+    "value_bnb": 0.12638071,
+    "ts": 1790125426
+   }
+  }
+ },
+ "distinct_operators_implied": 3
+}
