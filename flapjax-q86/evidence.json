@@ -283,5 +283,41 @@
    }
   }
  },
- "distinct_operators_implied": 3
+ "distinct_operators_implied": 3,
+ "funder_transactions": {
+  "0xfb200657f7266157a45dfcc6c09690726daa24e6": {
+   "funder": "0x7c34e9e21ee28a49ff0b84b61774119e6633359f",
+   "tx": "0xa3d7042983f4f2352b9b8f324414688db10887e2b2b2a125deca9a8bec6624e7",
+   "block": 126835408,
+   "value_bnb": 0.0005,
+   "ts": 1791638731,
+   "cot": "2026-10-10 08:25:31"
+  },
+  "0xca58696564492ef9c3229c89072365b253bda246": {
+   "funder": "0x7c34e9e21ee28a49ff0b84b61774119e6633359f",
+   "tx": "0x87443eff758296585f6d6eb7b68800ea6c73f143239e60541a6ef5b1f072d456",
+   "block": 130097514,
+   "value_bnb": 0.0005,
+   "ts": 1793107746,
+   "cot": "2026-10-27 08:29:06"
+  },
+  "0xf325475201477745f3956f815edb50e8c16426ba": {
+   "funder": "0x3ce2c77570a651bd344beb3d3d610aa0548c8ac8",
+   "tx": "0xb97bc7b736553fcb93c8e65dea438acc126bdfd4abad9963559ef17391348792",
+   "block": 130818784,
+   "value_bnb": 0.0002,
+   "ts": 1793432475,
+   "cot": "2026-10-31 02:41:15"
+  }
+ },
+ "treasury_first_funder": {
+  "first_fund_block": 123473817,
+  "funder": {
+   "funder": "0x5ba434b40be6cfc7033bf8d4545320fa609a4268",
+   "tx": "0xe0f7aeeedd38558ba63a596b8eb6b73e53af63d6282fc3e370160f3b2109bfd0",
+   "block": 123473817,
+   "value_bnb": 0.12638071,
+   "ts": 1790125426
+  }
+ }
 }

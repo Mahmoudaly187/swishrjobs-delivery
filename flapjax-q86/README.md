@@ -78,21 +78,27 @@ An address with **nonce 0 and balance 0** has never sent a transaction and holds
 | `0xb1051c2b38ad3efefc7ff5fb61d7068bd031b81e` | 0 | — | none — never received BNB |
 | `0x3aeae5f742e34f94db19b6c494072957633fa7ca` | 0 | — | none — never received BNB |
 
-Only three recipients have ever been funded with BNB:
+Only three recipients have ever been funded with BNB. The funder tx for each, so the link can be re-checked:
 
-- `0xfb200657…a24e6` — first funded at block **126835408** (well before the window)
-- `0xca586965…da246` — first funded at block **130097514** (before the window)
-- `0xf3254752…26ba` — first funded at block **130818784** (before the window)
+| Recipient | First funded at block | Funder | Funder tx | BNB | Time (COT) |
+|---|---|---|---|---|---|
+| `0xfb200657…a24e6` | 126835408 | treasury `0x7c34e9e2…359f` | `0xa3d7042983f4f2352b9b8f324414688db10887e2b2b2a125deca9a8bec6624e7` | 0.0005 | 2026-10-10 08:25:31 |
+| `0xca586965…da246` | 130097514 | treasury `0x7c34e9e2…359f` | `0x87443eff758296585f6d6eb7b68800ea6c73f143239e60541a6ef5b1f072d456` | 0.0005 | 2026-10-27 08:29:06 |
+| `0xf3254752…26ba` | 130818784 | `0x3ce2c77570a651bd344beb3d3d610aa0548c8ac8` | `0xb97bc7b736553fcb93c8e65dea438acc126bdfd4abad9963559ef17391348792` | 0.0002 | 2026-10-31 02:41:15 |
+
+All three funder txs are well before the 11-01 window. For completeness, the treasury itself was first funded with BNB by `0x5ba434b40be6cfc7033bf8d4545320fa609a4268` in tx `0xe0f7aeeedd38558ba63a596b8eb6b73e53af63d6282fc3e370160f3b2109bfd0` at block 123473817, 0.12638071 BNB — that is the treasury's own first funder, not one of the recipients'.
 
 ## Grouping by shared first funder
 
 Recipients that share a first funder are grouped. The treasury is itself a node in the comparison, so a recipient funded by the treasury joins the treasury's group.
 
-| Group | First BNB funder | Recipients | FLAPJAX received |
-|---|---|---|---|
-| **G1** | **treasury** `0x7c34e9e21ee28a49ff0b84b61774119e6633359f` | `0xfb200657…a24e6`, `0xca586965…da246` | 25,000 + 100,000 + 300,000 = 425,000 |
-| **G2** | `0x3ce2c77570a651bd344beb3d3d610aa0548c8ac8` | `0xf3254752…26ba` | 250,000 |
-| **G3** | *no BNB funder* | the remaining **14** recipients | 6,600,000 |
+| Group | First BNB funder | Recipients | FLAPJAX received | Funder tx that links the group |
+|---|---|---|---|---|
+| **G1** | **treasury** `0x7c34e9e21ee28a49ff0b84b61774119e6633359f` | `0xfb200657…a24e6`, `0xca586965…da246` | 25,000 + 100,000 + 300,000 = 425,000 | `0xa3d7042983f4f2352b9b8f324414688db10887e2b2b2a125deca9a8bec6624e7` (blk 126835408) and `0x87443eff758296585f6d6eb7b68800ea6c73f143239e60541a6ef5b1f072d456` (blk 130097514) |
+| **G2** | `0x3ce2c77570a651bd344beb3d3d610aa0548c8ac8` | `0xf3254752…26ba` | 250,000 | `0xb97bc7b736553fcb93c8e65dea438acc126bdfd4abad9963559ef17391348792` (blk 130818784) |
+| **G3** | *no BNB funder* | the remaining **14** recipients | 6,600,000 | none — these recipients have no funder tx, which is the evidence itself |
+
+Each of G1's two recipients has its own funder tx from the treasury; both are listed. G3 has no funder tx by construction: the absence of any inbound BNB transfer is what places those 14 addresses in this group, and any reader can confirm it by checking that each has nonce 0 and balance 0.
 
 ## Distinct operators implied
 
