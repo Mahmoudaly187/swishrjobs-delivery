@@ -1,0 +1,91 @@
+{
+ "ticker": "RAY",
+ "address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+ "reportId": "cmvzprl8b0004js08prn4fofs",
+ "conversationId": "cmvzprl8b0005js08ygdg2a8m",
+ "projectName": "Raydium",
+ "chars": 15407,
+ "report": "# Raydium (RAY) — Technical Research Report\n\n**Blockchain:** Solana | **Contract Address:** `4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R`\n\n---\n\n## 1. What It Is\n\nRaydium is an automated market maker (AMM) and liquidity provider built natively on the Solana blockchain, designed to serve the Serum decentralized exchange (DEX) ecosystem. Launched as one of the earliest DeFi protocols on Solana, Raydium holds a first-mover advantage as an AMM integrated with Serum's central limit orderbook. Unlike traditional AMMs that operate in isolation, Raydium provides on-chain liquidity to a central limit orderbook, meaning that Raydium liquidity providers gain access to the entire order flow and liquidity of Serum. This unique architectural distinction allows Raydium LPs to benefit from cross-protocol liquidity aggregation in ways that isolated AMMs cannot.\n\nThe native token, RAY, serves as the utility and governance asset of the ecosystem. Raydium's platform encompasses a suite of DeFi products including an AMM exchange, yield farming opportunities, a launchpad for new projects, and perpetual trading capabilities. The protocol is designed to act as a bridge for projects seeking to expand to Solana and Serum, positioning the RAY token as a foundational element for enabling further development with partners and the broader ecosystem.\n\nLong-term, Raydium aims to capture and maintain a leadership position among AMMs and liquidity providers on Serum while leveraging Solana's high-throughput capabilities to drive the evolution of decentralized finance. The project is categorized across multiple sectors including Decentralized Exchange (DEX), Exchange-based Tokens, Decentralized Finance (DeFi), Yield Farming, Automated Market Maker (AMM), Perpetuals, Solana Ecosystem, and Launchpad protocols.\n\n---\n\n## 2. Holder Analytics\n\n*This section applies to BNB Smart Chain tokens only. Raydium operates on Solana, so holder analytics are not applicable here.*\n\n**Data not available** — Raydium is a Solana-based token; holder distribution analytics specific to this report format are not provided.\n\n---\n\n## 3. Safety Analytics\n\n*This section applies to BNB Smart Chain tokens only. Raydium operates on Solana, so BNB-specific security analytics are not applicable.*\n\n**Data not available** — As a Solana-native token, the security analytics framework for BNB Smart Chain tokens does not apply. However, notable safety indicators from available data include:\n\n- **Not identified as honeypot** — Raydium is a legitimate, long-standing DeFi protocol with its native token listed on major centralized exchanges including Binance, Coinbase, Kraken, OKX, KuCoin, Gate.io, and many others.\n- **No security warnings identified** — The project has operated continuously since its launch and maintains a substantial total value locked (TVL) of approximately **$1.12 billion**.\n- **Exchange Listings as Verification** — The token's presence on over 30 centralized exchanges with deep liquidity serves as a strong indicator of established legitimacy.\n\n---\n\n## 4. Community Chatter\n\nThe community surrounding $RAY is exhibiting a cautiously optimistic sentiment, with a blend of technical analysis-driven enthusiasm and measured expectations. Market participants on X (formerly Twitter) are actively discussing RAY's price structure, with several analysts noting the token's constructive chart pattern and potential for upward movement.\n\n**Key discussion themes include:**\n\n- **Technical Analysis Focus**: Multiple analysts, including @Finora_EN, have published detailed technical breakdowns of RAY's 4-hour chart, identifying key resistance levels at $0.8555, $0.8594, and $0.8832. The prevailing view suggests a bullish bias aligned with daily timeframes and Bitcoin's momentum, though some caution is advised regarding the counter-trend nature of the bounce relative to the weekly timeframe.\n\n- **Chart Structure Optimism**: @ChelseaYouthPix highlighted that RAY is \"keeping the chart constructive\" with price maintaining above the critical support level of $0.82565. This structural integrity is viewed positively by traders monitoring the token.\n\n- **Comparative Valuation Discussions**: Notable crypto commentator @Cryptic100x referenced RAY's historical peak market capitalization of approximately $2.5 billion in discussions about DEX token valuations, positioning RAY within the context of major DEX tokens like $1INCH, $JUP, and $AERO.\n\n- **General Bullish Sentiment**: Several community members including @Hirnzwaerg expressed bullish outlooks, describing $RAY as \"spicy,\" \"on the radar,\" and suggesting it \"could surprise everyone.\" These sentiments reflect a generally positive community disposition toward the token's near-term prospects.\n\n- **Active Trading Rooms**: Multiple accounts including @manuelharnanmuo, @Alechenoa, @2010_Kryz21, and @pyveter noted that trading rooms are \"following this closely\" and observing \"fresh movement\" in RAY, indicating active retail interest and monitoring.\n\n**Sentiment Assessment**: The overall community sentiment is **moderately bullish** with a technical-analysis-driven approach. While there is enthusiasm about potential upside, many commentators emphasize the importance of confirmation signals and key level breakthroughs before committing to positions. The sentiment votes on CoinGecko are evenly split at 50% positive and 50% negative, reflecting a balanced but engaged community perspective.\n\n---\n\n## 5. Top Tweets\n\n**@Finora_EN:**\n> @zugurd alright let's see what's cooking on $RAY #RAYUSDT 4h 🧐\n> - my bias is bullish here on the 4h, aligned with daily and BTC, but it is a counter-trend bounce versus weekly so I want a cleaner confirmation before I lean in\n> - I expect a push toward 0.8555 / 0.8594 first, then subsequently 0.8832 if that liquidity at the last swing high gets taken\n> - entry zone: 0.832–0.825 after a dip into demand, or a 4h reclaim/hold above 0.8521\n> - wait BEFORE entering: bullish engulfing or pin bar off that zone, or a lower-timeframe market structure shift (break of a minor high) with a sweep of 0.832 then reclaim — volume is quiet at 0.25x so I need that reaction, not a blind breakout\n> - take-profits in order: 0.8555, 0.8594, then 0.8832\n> - place protection beyond the structure flip / last higher low, not a fixed number\n> - invalidation: a 4h close below 0.7856 flips my bias to bearish\n> - factor BTC's buy-side pressure (OI up, funding positive) into the trade since alts tend to follow that tape\n> not investment advice, educational report only\n> 📊 Want the full detailed breakdown of RAYUSDT 4h — every level, entry and target? One tap, free on Telegram → https://t.co/bSJcLzvnax\n\n**@ChelseaYouthPix:**\n> $RAY is keeping the chart constructive 👀\n> The important part is that price remains above 0.82565.\n> That keeps the current structure intact.\n> 🚀 Key levels: 0.85558 / 0.86577 / 0.87596\n> Join experienced traders via the link in my bio.\n> #RAY #Crypto https://t.co/pWWKm1WvGo\n\n**@probablenumbers:**\n> $RAY → $ATTT. Raytech Holding Limited is changing its name to Atlas Trinity Tech Limited and its Nasdaq ticker from \"RAY\" to \"ATTT,\" effective at the open on or around September 10, 2026.🍀\n\n**@Cryptic100x:**\n> Peak DEX valuations:\n> $1INCH: $1.6B MC / $13B FDV\n> $JUP: $2.7B / $20B\n> $RAY: $2.5B / $9.3B\n> $AERO: $1.7B / $3B\n> $MANCER is a DEX on Robinhood Chain at ~$6M MC / ~$12M FDV.\n> That's less than 0.4% of the smallest peer peak market cap. The opportunity is barely priced in.\n\n**@Hirnzwaerg:**\n> @1000xgirl $RAY looking spicy 🌶️🚀\n\n---\n\n## 6. Coin-O-Metry\n\n| Metric | Value |\n|--------|-------|\n| **Token Price** | $0.8423 USD |\n| **Market Cap** | $226,997,211 (~$227M) |\n| **All-Time High Price** | $16.83 USD (September 12, 2021) |\n| **All-Time High Market Cap** | Data not available |\n| **24-Hour Price Change** | +3.64% |\n| **24-Hour Volume** | $14,033,004 |\n| **Total Holders** | Data not available |\n| **Launch Date & Token Age** | Data not available (pair created November 28, 2022) |\n| **Launchpad** | Data not available |\n| **Contract Address** | `4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R` |\n| **Fully Diluted Valuation** | $467,403,809 |\n| **Circulating Supply** | 269,538,779.60 RAY |\n| **Total Supply** | 555,000,000 RAY |\n| **Max Supply** | 555,000,000 RAY |\n| **Market Cap Rank** | #166 |\n| **Total Value Locked (TVL)** | $1,118,585,702 |\n| **Mcap to TVL Ratio** | 0.20 |\n\n**Additional Price Statistics:**\n- **24-Hour High:** $0.8541\n- **24-Hour Low:** $0.8144\n- **All-Time Low:** $0.1344 (December 29, 2022)\n- **Price Change (7d):** +4.30%\n- **Price Change (14d):** +16.97%\n- **Price Change (30d):** +35.45%\n- **Price Change (60d):** +17.36%\n- **Price Change (200d):** -25.43%\n- **Price Change (1y):** -74.92%\n\n---\n\n## 7. Technical Analysis\n\n### Price & Market Overview\n\nRaydium is currently trading at **$0.8423**, representing a significant recovery from its all-time low of $0.1344 recorded in December 2022, yet still approximately 95% below its all-time high of $16.83 achieved in September 2021 during the peak of the previous bull market cycle. The token has demonstrated strong momentum over the past month with a 35.45% gain, suggesting renewed interest and accumulation. The current market capitalization of approximately $227 million places RAY at rank #166 among all cryptocurrencies.\n\nThe ratio of market cap to total value locked stands at 0.20, which is notably low and suggests that the token may be undervalued relative to the actual capital deployed within the protocol. The fully diluted valuation of $467 million implies a market cap to FDV ratio of 0.49, indicating that a substantial portion of the total token supply has not yet been circulated.\n\n### Trading Indicators\n\n**Volume Analysis:** The 24-hour trading volume across all markets totals approximately **$14.03 million**, with the Raydium USDC pair on DexScreener showing $411,847 in volume. The buy/sell ratio over the past 24 hours is notably bullish with **1,664 buys versus 971 sells**, representing a buy-to-sell ratio of approximately 1.71:1. This buying pressure is consistent with the positive price movement observed during the same period.\n\n**Price Momentum:** The token has shown positive momentum across multiple timeframes:\n- **1-Hour Change:** -0.05% (slight pullback)\n- **6-Hour Change:** +0.42%\n- **24-Hour Change:** +3.64%\n- **7-Day Change:** +4.30%\n- **30-Day Change:** +35.45%\n\nThe 30-day performance significantly outpaces shorter-term gains, suggesting an accelerating trend. However, the negative 200-day and 1-year changes (-25.43% and -74.92% respectively) indicate that the token remains in a longer-term downtrend despite recent recovery efforts.\n\n**Liquidity Assessment:** The Raydium USDC pool maintains substantial liquidity of approximately **$4.31 million**, with $2.56 million in RAY and $2.15 million in USDC. This provides adequate depth for trading operations. The broader market liquidity across centralized exchanges is robust, with RAY listed on major platforms including Binance, Coinbase, Kraken, OKX, and KuCoin.\n\n### On-chain Metrics\n\nThe Raydium protocol currently secures **$1.12 billion in total value locked**, demonstrating significant protocol usage and capital efficiency. The market cap to TVL ratio of 0.20 suggests that the market valuation is only one-fifth of the capital deployed within the ecosystem, which could indicate potential undervaluation if the protocol maintains its competitive position.\n\nThe circulating supply of approximately 269.5 million RAY represents about 48.6% of the total supply of 555 million tokens. The remaining tokens are presumably allocated to team, treasury, ecosystem development, and future releases as part of the token emission schedule.\n\n### Exchange Listings & Availability\n\nRaydium is exceptionally well-distributed across the cryptocurrency exchange landscape. The token is available on over 40 trading venues including:\n\n**Tier-1 Exchanges:**\n- Binance (RAY/USDT, RAY/USDC, RAY/TRY)\n- Coinbase Exchange (RAY/USD)\n- Kraken (RAY/USD, RAY/EUR)\n- OKX (RAY/USDT, RAY/USDC, RAY/USD, RAY/EUR)\n- KuCoin (RAY/USDT)\n- Gate.io (RAY/USDT)\n- Bitget (RAY/USDT)\n- MEXC (RAY/USDT, RAY/USDC)\n\n**Solana Native DEXs:**\n- Raydium (RAY/USDC, RAY/SOL, RAY/USDT)\n- Orca (RAY/SOL, RAY/USDC)\n- Meteora\n\n**Additional Exchanges:** HTX, LBank, Phemex, Bitvavo, Crypto.com Exchange, CoinEx, Bitrue, BingX, Bybit (via BYDFi), and numerous others.\n\nThe 24-hour volume is distributed across these venues, with Binance leading at approximately $1.3 million in RAY/USDT volume, followed by Raydium's native pools and HTX.\n\n### Recent News & Updates\n\nFrom the available tweet data, several notable developments and discussions are occurring:\n\n1. **Technical Breakout Potential**: Multiple analysts are highlighting RAY's constructive chart structure, with key resistance levels identified at $0.8555-$0.8832. The community appears to be positioning for a potential breakout.\n\n2. **Comparative DEX Valuations**: Commentary from @Cryptic100x references RAY's historical peak market cap of $2.5 billion, contextualizing the token's current valuation within the broader DEX sector landscape.\n\n3. **Trading Room Activity**: Multiple accounts report active monitoring and \"fresh movement\" in trading rooms focused on RAY, indicating sustained retail interest.\n\n4. **Name Confusion Note**: A tweet mentions Raytech Holding Limited changing its Nasdaq ticker from \"RAY\" to \"ATTT\" — this refers to a separate entity and not the Raydium protocol, though it may create temporary confusion in ticker-related searches.\n\n### Risk Assessment\n\n**Market Volatility Risk:** RAY has demonstrated significant volatility throughout its history, with dramatic price swings between its all-time high of $16.83 and all-time low of $0.1344. The current price remains substantially below historical peaks, and the token has experienced a 74.92% decline over the past year. This indicates that despite recent positive momentum, the token remains in a challenging market environment.\n\n**Concentration Risk:** With a circulating supply representing less than half of the total supply, future token unlocks could create selling pressure. The market cap to FDV ratio of 0.49 suggests that significant value is locked in yet-to-be-circulated tokens.\n\n**Competitive Landscape:** The DEX sector on Solana has become increasingly competitive with the emergence of protocols like Jupiter, Orca, and Meteora. Raydium's ability to maintain its position as a leading AMM will depend on continued innovation and ecosystem integration.\n\n**Protocol Risk:** As with all DeFi protocols, smart contract risk exists, though Raydium's long operational history and substantial TVL suggest a proven track record. The protocol has successfully navigated multiple market cycles since its launch.\n\n**Positive Indicators:** Despite the risks, several factors support a potentially constructive outlook: the low market cap to TVL ratio suggests fundamental value, the recent 35% monthly gain indicates renewed accumulation, and the token maintains deep liquidity across major exchanges with strong buy-side pressure in recent trading sessions.\n\n---\n\n*This report was generated based on data available as of the latest market update. Cryptocurrency investments carry inherent risks; this document serves as an informational resource and should not be construed as financial advice.*",
+ "tokenData": {
+  "dexData": {
+   "fdv": 468037515,
+   "url": "https://dexscreener.com/solana/6ummuiyobjsrhakaobjw8bvkmjtdvxaebtbt7rxwo1mg",
+   "info": {
+    "header": "https://cdn.dexscreener.com/cms/images/1da07e256a9a70fbdc532be8a1a78770de144c1d961bf565f7e3739341887db3?width=1500&height=500&quality=95&format=auto",
+    "socials": [
+     {
+      "url": "https://x.com/raydiumprotocol",
+      "type": "twitter"
+     }
+    ],
+    "imageUrl": "https://cdn.dexscreener.com/cms/images/654ec0cee3ecf3fd5d55c56302d82300ee114ee1ff91e52897798b486993f6c8?width=800&height=800&quality=95&format=auto",
+    "websites": [],
+    "openGraph": "https://cdn.dexscreener.com/token-images/og/solana/4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R?timestamp=1788520200000"
+   },
+   "txns": {
+    "h1": {
+     "buys": 18,
+     "sells": 15
+    },
+    "h6": {
+     "buys": 262,
+     "sells": 203
+    },
+    "m5": {
+     "buys": 1,
+     "sells": 0
+    },
+    "h24": {
+     "buys": 1664,
+     "sells": 971
+    }
+   },
+   "dexId": "raydium",
+   "volume": {
+    "h1": 2497.06,
+    "h6": 49186,
+    "m5": 4.31,
+    "h24": 411847.39
+   },
+   "chainId": "solana",
+   "priceUsd": "0.8433",
+   "baseToken": {
+    "name": "Raydium",
+    "symbol": "RAY",
+    "address": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+   },
+   "liquidity": {
+    "usd": 4309829.4,
+    "base": 2558494,
+    "quote": 2152219
+   },
+   "marketCap": 227305329,
+   "quoteToken": {
+    "name": "USD Coin",
+    "symbol": "USDC",
+    "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+   },
+   "pairAddress": "6UmmUiYoBjSrhakAobJw8BvkmJtDVxaeBtbt7rxWo1mg",
+   "priceChange": {
+    "h1": -0.16,
+    "h6": 0.42,
+    "h24": 3.41
+   },
+   "priceNative": "0.8433",
+   "pairCreatedAt": 1669602311000
+  },
+  "coingeckoData": null
+ },
+ "metadata": {
+  "contractAddress": "4k3dyjzvzp8emzwuxbbcjevwskkk59s5icnly3qrkx6r",
+  "ticker": "RAY",
+  "projectName": "Raydium",
+  "generatedAt": "2026-11-02T20:30:57.145Z",
+  "chain": "solana",
+  "dataSourcesUsed": {
+   "dexScreener": true,
+   "coinGecko": false,
+   "tweets": true
+  }
+ }
+}

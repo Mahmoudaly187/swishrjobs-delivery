@@ -1,0 +1,42 @@
+[
+ {
+  "ticker": "SOL",
+  "reportId": "cmvzprcw70001l608nc7pph6p",
+  "question": "The report shows the SOL/USDC pool holding $14.20M of USDC against 114,828 SOL worth about $11.95M at the printed $104.06 - a 54/46 skew toward the quote asset - while 24h activity records 44,535 sells against 42,614 buys and $145.5M of volume against $26.1M of liquidity. Does that combination describe balanced two-way flow, or a persistent net drain of SOL from this specific pool? If it is a drain, which measurable change in pool skew or the buy/sell ratio would show it accelerating rather than mean-reverting?",
+  "httpStatus": 200,
+  "messageId": "cmvzpt0jd0009gz08e09mk0jg",
+  "ok": true
+ },
+ {
+  "ticker": "JTO",
+  "reportId": "cmvzprh7y0007l608x4zzgi8b",
+  "question": "JTO's market cap is printed as $221.0M against a $427.2M FDV, so $206.2M of supply is not yet circulating - about 166x the $1.24M in its deepest pool - while the same report shows $334.23 traded in the last hour across four transactions. Given that ratio, does the reported market cap describe a price a large holder could realise, or a mark on a float that is not tradeable at scale? What in the report would let you tell those two apart?",
+  "httpStatus": 200,
+  "messageId": "cmvzpt21f000bgz081gq64dzo",
+  "ok": true
+ },
+ {
+  "ticker": "JUP",
+  "reportId": "cmvzprf940004l608hgn79w8s",
+  "question": "The report records 52 sells against 3 buys in the most recent hour - 94.5% one-sided - with zero trades in the last five minutes and only $5,236 of quote-side depth in the pool it sampled, while the six-hour change is -1.84%. Is that the signature of one seller working through thin liquidity, or of a stale sample, and what independent figure in the report would separate those two explanations before anyone acts on the move?",
+  "httpStatus": 200,
+  "messageId": "cmvzpt3gd000dgz08g2wie5t8",
+  "ok": true
+ },
+ {
+  "ticker": "PYTH",
+  "reportId": "cmvzprj8p000al608dcbsi1y2",
+  "question": "PYTH has the most sell-skewed tape in this set - 2,046 sells to 1,331 buys over 24h and a -5.78% day - yet also the highest circulating ratio at 78.7% of FDV, so unlock pressure is the lowest here. If the selling is not unlock-driven, what does the report point to as its source, and how would you test whether this is holder distribution or a Solana pool simply tracking a price set elsewhere?",
+  "httpStatus": 200,
+  "messageId": "cmvzpt4sn000fgz08moe07arj",
+  "ok": true
+ },
+ {
+  "ticker": "RAY",
+  "reportId": "cmvzprl8b0004js08prn4fofs",
+  "question": "RAY is the only asset in this set with a buy-skewed tape, 1,664 buys to 971 sells, and it rose 3.41% over 24h on $411,847 of volume against a $4.31M pool. But it still carries a 51.4% FDV overhang. Would you expect that buy skew to persist as unlocked supply becomes sellable, or is 48.6% circulating too small a float for the observed buying to absorb the overhang? What would the report need to show for the skew to be evidence rather than noise?",
+  "httpStatus": 200,
+  "messageId": "cmvzpt64t000hgz08662q03e9",
+  "ok": true
+ }
+]
