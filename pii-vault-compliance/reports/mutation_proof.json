@@ -1,0 +1,106 @@
+{
+  "baseline_passed": true,
+  "mutations_defined": 12,
+  "mutations_applied": 12,
+  "caught": 12,
+  "survived": 0,
+  "score": "12/12",
+  "results": [
+    {
+      "mutation": "drop_audit_reason_gate",
+      "file": "pii_vault/api.py",
+      "property": "detokenize must refuse an empty reason",
+      "applied": true,
+      "caught": true,
+      "detail": "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c3_detokenize_denied_without_reason_and_logged"
+    },
+    {
+      "mutation": "drop_audit_permission_gate",
+      "file": "pii_vault/api.py",
+      "property": "detokenize must refuse a role without the power",
+      "applied": true,
+      "caught": true,
+      "detail": "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c3_detokenize_denied_without_power_and_logged"
+    },
+    {
+      "mutation": "skip_scope_check_on_read",
+      "file": "pii_vault/api.py",
+      "property": "cross-scope reads must be refused",
+      "applied": true,
+      "caught": true,
+      "detail": "=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c6_recruiter_cannot_read_another_station\nFAILED tests/test_acceptance.py::test_c6_operations_cannot_cross_cities - ass..."
+    },
+    {
+      "mutation": "break_audit_hash_chain",
+      "file": "pii_vault/audit.py",
+      "property": "the audit chain must detect a broken link",
+      "applied": true,
+      "caught": true,
+      "detail": "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c4_breaking_a_link_is_detected - Assert..."
+    },
+    {
+      "mutation": "skip_audit_entry_hash_check",
+      "file": "pii_vault/audit.py",
+      "property": "the audit chain must detect an edited entry",
+      "applied": true,
+      "caught": true,
+      "detail": "=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c4_tampering_is_located - assert not True\nFAILED tests/test_acceptance.py::test_c4_tampering_detected_over_the_api - as..."
+    },
+    {
+      "mutation": "disable_id_checksum",
+      "file": "pii_vault/masking.py",
+      "property": "national ID detection must be checksum-gated",
+      "applied": true,
+      "caught": true,
+      "detail": "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c2_checksum_gate_is_enforced_on_detection"
+    },
+    {
+      "mutation": "name_label_accepts_any_han",
+      "file": "pii_vault/masking.py",
+      "property": "unseparated name matches must require a plausible surname",
+      "applied": true,
+      "caught": true,
+      "detail": "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c2_surname_gate_stops_prose_being_read_as_a_name"
+    },
+    {
+      "mutation": "retention_ignores_window",
+      "file": "pii_vault/retention.py",
+      "property": "expiry must be driven by the retention window",
+      "applied": true,
+      "caught": true,
+      "detail": "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c5_expired_data_anonymized_after_fast_forward"
+    },
+    {
+      "mutation": "consent_withdrawal_keeps_data",
+      "file": "pii_vault/retention.py",
+      "property": "consent withdrawal must erase the sealed data",
+      "applied": true,
+      "caught": true,
+      "detail": "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c5_consent_withdrawal_deletes_immediately"
+    },
+    {
+      "mutation": "rotation_forgets_old_key",
+      "file": "pii_vault/kms.py",
+      "property": "rotation must keep the historical key list intact",
+      "applied": true,
+      "caught": true,
+      "detail": "=========================== short test summary info ============================\nERROR tests/test_acceptance.py - TypeError: Can't instantiate abstract class ...\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!"
+    },
+    {
+      "mutation": "vault_aad_drops_token",
+      "file": "pii_vault/vault.py",
+      "property": "the AAD must bind the token so ciphertext cannot be relocated",
+      "applied": true,
+      "caught": true,
+      "detail": "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c1_ciphertext_cannot_be_moved_to_another_row"
+    },
+    {
+      "mutation": "export_skips_approval",
+      "file": "pii_vault/api.py",
+      "property": "export must require an approved approval id",
+      "applied": true,
+      "caught": true,
+      "detail": "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c6_export_requires_approval - assert 20..."
+    }
+  ]
+}

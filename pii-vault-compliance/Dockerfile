@@ -10,7 +10,7 @@ COPY pii_vault ./pii_vault
 COPY scripts ./scripts
 COPY data ./data
 COPY reports ./reports
-COPY pytest.ini Makefile README.md ./
+COPY pytest.ini Makefile README.md run_tests.sh ./
 COPY tests ./tests
 
 EXPOSE 8000

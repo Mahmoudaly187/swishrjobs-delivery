@@ -2,7 +2,7 @@ Dependency vulnerability scan
 =============================
 Tool      : pip-audit (PyPI advisory + OSV databases)
 Command   : python3 -m pip_audit -r requirements.txt
-Run at    : 2026-11-03T02:34:17Z
+Run at    : 2026-11-03T02:42:42Z
 Scope     : direct runtime dependencies pinned in requirements.txt
 
 Severity policy

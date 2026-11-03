@@ -127,6 +127,30 @@ def test_c1_distinct_ciphertexts_for_equal_plaintext():
     assert a.ciphertext != b.ciphertext
 
 
+def test_c1_ciphertext_cannot_be_moved_to_another_row():
+    """The AAD binds token and field, so a lifted ciphertext fails authentication.
+
+    Without this binding an attacker with write access to the table could copy a
+    colleague's ciphertext into their own row and read it through the API.
+    """
+    kms = LocalFileKMS(tempfile.mkdtemp(prefix="pii-kms-aad-"))
+    vault = PIIVault(kms)
+    sealed = vault.seal("tok_victim", "phone", "13800138000")
+    moved = type(sealed)(token="tok_attacker", key_id=sealed.key_id, nonce=sealed.nonce, ciphertext=sealed.ciphertext)
+
+    with pytest.raises(Exception):
+        vault.open(moved, "phone")
+    # The same field under its original token still opens, so the binding is not
+    # simply breaking decryption altogether.
+    assert vault.open(sealed, "phone") == "13800138000"
+
+    # Moving a ciphertext between fields of the same row must fail too.
+    phone = vault.seal("tok_x", "phone", "13800138000")
+    as_name = type(phone)(token="tok_x", key_id=phone.key_id, nonce=phone.nonce, ciphertext=phone.ciphertext)
+    with pytest.raises(Exception):
+        vault.open(as_name, "name")
+
+
 # --- criterion 2 -----------------------------------------------------------------
 def test_c2_corpus_has_at_least_200_samples():
     rows = [json.loads(l) for l in SAMPLES.read_text(encoding="utf-8").splitlines() if l.strip()]
@@ -171,7 +195,7 @@ def test_c2_edge_case_formats_are_detected():
         "phone_hyphen": "手机号 138-0013-8000",
         "phone_86": "手机号 +86 13800138000",
         "phone_86_plain": "手机号 8613800138000",
-        "id_lower_x": "身份证号 11010119900307123x",
+        "id_lower_x": "身份证号 11010119900300003x",
         "card_grouped": "银行卡 6222 0212 3456 7894",
         "foreign_name": "联系人：Alexander Petrov",
         "address_long": "住址：杭州市西湖区文一西路333号11幢15单元",
@@ -186,6 +210,29 @@ def test_c2_checksum_helpers_reject_invalid_values():
     assert not id_checksum_valid("110101199003071234")
     assert luhn_valid("6222021234567894")
     assert not luhn_valid("6222021234567890")
+
+
+def test_c2_checksum_gate_is_enforced_on_detection():
+    """A 17-digit-plus-check-char string with a *wrong* check char is not an ID.
+
+    Without the gate the detector would mask any 18-digit run, including order numbers
+    and timestamps, and the corpus would never reveal it.
+    """
+    masker = Masker()
+    assert masker.mask("身份证号 110101199003071233").spans, "a valid ID must be detected"
+    assert not masker.mask("身份证号 110101199003071234").spans, "an invalid checksum must not be masked"
+
+
+def test_c2_surname_gate_stops_prose_being_read_as_a_name():
+    """Without a separator a Han run only counts as a name if it starts with a surname.
+
+    ``站长会议要求`` is a policy sentence. The label ``站长`` is followed by ``会议要求``
+    with no separator, so only the surname check distinguishes the two.
+    """
+    masker = Masker()
+    assert masker.mask("站长会议要求：所有面试结果必须当日录入。").spans == []
+    assert masker.mask("站长：李四").spans, "an explicit separator is enough on its own"
+    assert masker.mask("站长李四").spans, "李 is a surname, so no separator is still a name"
 
 
 def test_c2_metrics_report_is_shipped():
@@ -267,6 +314,24 @@ def test_c4_chain_links_each_entry_to_its_predecessor():
     b = log.append("a", "record.read", "t1")
     assert b.prev_hash == a.entry_hash
     assert AuditEntry(**a.__dict__).compute_hash() == a.entry_hash
+
+
+def test_c4_breaking_a_link_is_detected():
+    """Deleting an entry breaks the chain; the check must report the link, not pass.
+
+    Editing an entry is caught by the hash check. *Removing* one leaves every
+    remaining hash self-consistent, so only the predecessor comparison can catch it —
+    and that comparison is what this test pins down.
+    """
+    log = AuditLog()
+    for i in range(5):
+        log.append("actor", "record.read", f"tok_{i}")
+
+    tampered = [e for e in log.entries if e.seq != 3]
+    ok, bad = log.verify_chain(tampered)
+    assert not ok, "a removed entry must not verify"
+    # Entry seq 4 is now at index 2 and no longer chains to entry seq 2's hash.
+    assert bad == 2
 
 
 # --- criterion 5 -----------------------------------------------------------------

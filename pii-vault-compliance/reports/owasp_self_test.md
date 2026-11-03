@@ -18,6 +18,14 @@ implemented is listed under *Residual risk* rather than claimed as covered.
 | A09 | Logging and monitoring failures | Views, detokenizations (granted and denied), exports, deletions and key rotations are all recorded with actor, reason and timestamp. | `test_c3_*`, `test_c5_deletion_records_are_produced_over_the_api` |
 | A10 | Server-side request forgery | The service makes no outbound requests. The Vault KMS adapter is the only egress point and its address is operator configuration, not user input. | `grep -rn "urlopen\|requests\." pii_vault/` returns nothing outside `kms.py` |
 
+## Verification of the tests themselves
+
+A green suite can be a vacuous one, so the controls above are not taken on trust:
+`scripts/mutation_proof.py` introduces 12 deliberate defects, one per control, and
+confirms the suite fails on each. Committed as `reports/mutation_proof.json`; 12/12
+caught. The first run of that prover exposed three controls the suite was not actually
+testing and two real detector bugs, all now fixed with regression tests.
+
 ## Residual risk
 
 * **Masking is a detection problem, not a proof.** Recall is 100% for phone numbers

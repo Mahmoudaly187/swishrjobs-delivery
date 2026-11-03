@@ -44,12 +44,14 @@ SINGLE_SURNAMES = (
 
 # --- regex building blocks -------------------------------------------------------
 # Mobile: 1[3-9] + 9 digits, tolerating spaces, hyphens and a +86 / 86 prefix.
+# The digit boundaries matter: without them the tail of a longer number (an 18-digit
+# national ID, say) is matched as a phone number.
 _SEP = r"[\s\-]?"
 _MOBILE_CORE = r"1[3-9]\d" + (_SEP + r"\d") * 8
-PHONE_RE = re.compile(r"(?:(?:\+?86)" + _SEP + r")?" + _MOBILE_CORE)
+PHONE_RE = re.compile(r"(?<!\d)(?:(?:\+?86)" + _SEP + r")?" + _MOBILE_CORE + r"(?!\d)")
 
 # Landline with area code, e.g. 010-12345678
-LANDLINE_RE = re.compile(r"0\d{2,3}" + _SEP + r"\d{7,8}")
+LANDLINE_RE = re.compile(r"(?<!\d)0\d{2,3}" + _SEP + r"\d{7,8}(?!\d)")
 
 # National ID: 17 digits + digit/check char, checksum-validated below.
 ID_RE = re.compile(r"(?<!\d)\d{17}[\dXx](?!\d)")
