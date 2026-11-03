@@ -1,0 +1,106 @@
+{
+  "baseline_passed": true,
+  "mutations_defined": 12,
+  "mutations_applied": 12,
+  "caught": 12,
+  "survived": 0,
+  "score": "12/12",
+  "results": [
+    {
+      "mutation": "remove_booking_lock",
+      "file": "app/booking.py",
+      "property": "the per-station lock is what prevents overselling under concurrency",
+      "applied": true,
+      "caught": true,
+      "detail": "=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c1_import_report_is_committed - FileNot...\nFAILED tests/test_acceptance.py::test_c3_fifty_concurrent_bookings - Assertio..."
+    },
+    {
+      "mutation": "allow_illegal_transition",
+      "file": "app/main.py",
+      "property": "illegal candidate transitions must be rejected",
+      "applied": true,
+      "caught": true,
+      "detail": "FAILED tests/test_acceptance.py::test_c1_import_report_is_committed - FileNot...\nFAILED tests/test_acceptance.py::test_c2_api_rejects_an_illegal_transition - ...\nFAILED tests/test_acceptance.py::test_c4_every_state_change_emits_an_event - ..."
+    },
+    {
+      "mutation": "disable_lead_dedup",
+      "file": "app/leads.py",
+      "property": "deduplication by phone token must drop repeated leads",
+      "applied": true,
+      "caught": true,
+      "detail": "FAILED tests/test_acceptance.py::test_c1_equivalent_phone_formats_dedupe - As...\nFAILED tests/test_acceptance.py::test_c1_committed_sample_file_imports - asse...\nFAILED tests/test_acceptance.py::test_c1_import_report_is_committed - FileNot..."
+    },
+    {
+      "mutation": "phone_token_skips_country_code",
+      "file": "app/leads.py",
+      "property": "equivalent phone formats must normalise to the same token",
+      "applied": true,
+      "caught": true,
+      "detail": "FAILED tests/test_acceptance.py::test_c1_equivalent_phone_formats_dedupe - As...\nFAILED tests/test_acceptance.py::test_c1_committed_sample_file_imports - asse...\nFAILED tests/test_acceptance.py::test_c1_import_report_is_committed - FileNot..."
+    },
+    {
+      "mutation": "signature_ignores_timestamp",
+      "file": "app/events.py",
+      "property": "the HMAC must cover the timestamp so a delivery cannot be replayed",
+      "applied": true,
+      "caught": true,
+      "detail": "=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c1_import_report_is_committed - FileNot...\nFAILED tests/test_acceptance.py::test_c4_signature_verifies_and_covers_the_timestamp"
+    },
+    {
+      "mutation": "delivery_handles_duplicates",
+      "file": "app/events.py",
+      "property": "a repeat delivery must not be acted on twice",
+      "applied": true,
+      "caught": true,
+      "detail": "=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c1_import_report_is_committed - FileNot...\nFAILED tests/test_acceptance.py::test_c4_duplicate_delivery_is_idempotent - A..."
+    },
+    {
+      "mutation": "no_retry_on_failure",
+      "file": "app/events.py",
+      "property": "a failed delivery must be retried",
+      "applied": true,
+      "caught": true,
+      "detail": "FAILED tests/test_acceptance.py::test_c1_import_report_is_committed - FileNot...\nFAILED tests/test_acceptance.py::test_c4_failed_delivery_is_retried_then_succeeds\nFAILED tests/test_acceptance.py::test_c4_delivery_gives_up_after_max_attempts"
+    },
+    {
+      "mutation": "workbench_list_unmasked",
+      "file": "app/main.py",
+      "property": "the workbench list must be masked by default",
+      "applied": true,
+      "caught": true,
+      "detail": "=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c1_import_report_is_committed - FileNot...\nFAILED tests/test_acceptance.py::test_c5_workbench_list_is_masked_by_default"
+    },
+    {
+      "mutation": "reveal_without_reason",
+      "file": "app/main.py",
+      "property": "viewing a full number must require a stated reason",
+      "applied": true,
+      "caught": true,
+      "detail": "=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c1_import_report_is_committed - FileNot...\nFAILED tests/test_acceptance.py::test_c5_reveal_requires_a_reason - assert 20..."
+    },
+    {
+      "mutation": "drop_bearer_auth",
+      "file": "app/main.py",
+      "property": "employee routes must require a bearer token",
+      "applied": true,
+      "caught": true,
+      "detail": "=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c1_import_report_is_committed - FileNot...\nFAILED tests/test_acceptance.py::test_c5_reveal_needs_authentication - Assert..."
+    },
+    {
+      "mutation": "drop_watermark",
+      "file": "app/main.py",
+      "property": "workbench pages must carry a personal watermark",
+      "applied": true,
+      "caught": true,
+      "detail": "=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c1_import_report_is_committed - FileNot...\nFAILED tests/test_acceptance.py::test_c6_workbench_page_carries_the_watermark"
+    },
+    {
+      "mutation": "recommend_full_stations",
+      "file": "app/booking.py",
+      "property": "a station with no remaining quota must not be recommended",
+      "applied": true,
+      "caught": true,
+      "detail": "=========================== short test summary info ============================\nFAILED tests/test_acceptance.py::test_c1_import_report_is_committed - FileNot...\nFAILED tests/test_acceptance.py::test_c3_recommend_orders_by_distance_then_quota"
+    }
+  ]
+}

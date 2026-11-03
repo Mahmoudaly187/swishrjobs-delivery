@@ -1,0 +1,8 @@
+{
+  "source": "data/leads_sample.csv",
+  "received": 101,
+  "inserted": 60,
+  "duplicates": 41,
+  "rejected": 0,
+  "deduplicated_count": 60
+}

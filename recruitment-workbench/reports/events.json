@@ -1,0 +1,8 @@
+{
+  "signed": true,
+  "signature_covers_timestamp": true,
+  "delivered_after_retries": true,
+  "attempts": 4,
+  "handled_once": true,
+  "duplicate_deliveries": 1
+}

@@ -1,0 +1,98 @@
+{
+  "states": [
+    "new",
+    "collecting",
+    "complete",
+    "booked",
+    "interviewed",
+    "hired",
+    "rejected",
+    "handoff"
+  ],
+  "ordered_pairs_checked": 64,
+  "legal_transitions": 16,
+  "illegal_transitions": 48,
+  "all_illegal_rejected": true,
+  "transitions": [
+    {
+      "from": "new",
+      "to": "collecting",
+      "event": "candidate.updated"
+    },
+    {
+      "from": "new",
+      "to": "rejected",
+      "event": "candidate.updated"
+    },
+    {
+      "from": "collecting",
+      "to": "complete",
+      "event": "candidate.completed"
+    },
+    {
+      "from": "collecting",
+      "to": "rejected",
+      "event": "candidate.updated"
+    },
+    {
+      "from": "collecting",
+      "to": "handoff",
+      "event": "handoff.requested"
+    },
+    {
+      "from": "complete",
+      "to": "booked",
+      "event": "candidate.updated"
+    },
+    {
+      "from": "complete",
+      "to": "handoff",
+      "event": "handoff.requested"
+    },
+    {
+      "from": "complete",
+      "to": "rejected",
+      "event": "candidate.updated"
+    },
+    {
+      "from": "booked",
+      "to": "interviewed",
+      "event": "candidate.updated"
+    },
+    {
+      "from": "booked",
+      "to": "handoff",
+      "event": "handoff.requested"
+    },
+    {
+      "from": "booked",
+      "to": "rejected",
+      "event": "candidate.updated"
+    },
+    {
+      "from": "interviewed",
+      "to": "hired",
+      "event": "candidate.updated"
+    },
+    {
+      "from": "interviewed",
+      "to": "rejected",
+      "event": "candidate.updated"
+    },
+    {
+      "from": "interviewed",
+      "to": "handoff",
+      "event": "handoff.requested"
+    },
+    {
+      "from": "handoff",
+      "to": "hired",
+      "event": "candidate.updated"
+    },
+    {
+      "from": "handoff",
+      "to": "rejected",
+      "event": "candidate.updated"
+    }
+  ]
+}
