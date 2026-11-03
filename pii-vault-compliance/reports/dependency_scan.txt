@@ -1,0 +1,27 @@
+Dependency vulnerability scan
+=============================
+Tool      : pip-audit (PyPI advisory + OSV databases)
+Command   : python3 -m pip_audit -r requirements.txt
+Run at    : 2026-11-03T02:34:17Z
+Scope     : direct runtime dependencies pinned in requirements.txt
+
+Severity policy
+---------------
+HIGH and CRITICAL advisories must be fixed or the dependency replaced before
+delivery. MEDIUM is fixed when a compatible release exists, otherwise recorded
+with the compensating control. LOW is recorded and reviewed at the next release.
+unaddressed_high_severity: 0
+
+Result
+------
+No known vulnerabilities found
+
+Pinned dependency set audited:
+  SQLAlchemy==2.1.6
+  cryptography==50.0.2
+  fastapi==0.162.0
+  httpx==0.28.1
+  pydantic==2.14.2
+  pydantic_core==2.50.2
+  starlette==1.10.0
+  uvicorn==0.54.0

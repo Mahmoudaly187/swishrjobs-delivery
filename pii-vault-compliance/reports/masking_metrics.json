@@ -1,0 +1,23 @@
+{
+  "samples": 240,
+  "positives": 200,
+  "negatives": 40,
+  "per_field_recall": {
+    "address": 1.0,
+    "bankcard": 1.0,
+    "id": 1.0,
+    "name": 1.0,
+    "phone": 1.0
+  },
+  "per_field_support": {
+    "address": 123,
+    "bankcard": 116,
+    "id": 113,
+    "name": 128,
+    "phone": 130
+  },
+  "false_positive_samples": 0,
+  "false_positive_rate": 0.0,
+  "spurious_spans": 0,
+  "spurious_spans_per_sample": 0.0
+}

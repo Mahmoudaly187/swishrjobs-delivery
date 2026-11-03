@@ -1,0 +1,19 @@
+services:
+  pii-vault:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      PII_KMS: local
+      PII_KMS_DIR: /var/lib/pii-vault/kms
+      PII_RETENTION_DAYS: "180"
+    volumes:
+      - kms-keys:/var/lib/pii-vault/kms
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+volumes:
+  kms-keys:
