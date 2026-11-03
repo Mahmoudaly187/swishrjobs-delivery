@@ -1,0 +1,218 @@
+{
+  "locked": {
+    "threads": 50,
+    "quota": 5,
+    "successes": 5,
+    "rejected": 45,
+    "station_booked": 5,
+    "bookings_created": 5,
+    "oversold_by": 0,
+    "elapsed_s": 0.0157
+  },
+  "naive_repeat": 20,
+  "naive_runs_that_oversold": 20,
+  "naive_worst_bookings_created": 50,
+  "naive_runs": [
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 46,
+      "rejected": 4,
+      "station_booked": 46,
+      "bookings_created": 46,
+      "oversold_by": 41,
+      "elapsed_s": 0.0084
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 47,
+      "rejected": 3,
+      "station_booked": 47,
+      "bookings_created": 47,
+      "oversold_by": 42,
+      "elapsed_s": 0.0093
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 49,
+      "rejected": 1,
+      "station_booked": 49,
+      "bookings_created": 49,
+      "oversold_by": 44,
+      "elapsed_s": 0.009
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 49,
+      "rejected": 1,
+      "station_booked": 49,
+      "bookings_created": 49,
+      "oversold_by": 44,
+      "elapsed_s": 0.0079
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 49,
+      "rejected": 1,
+      "station_booked": 49,
+      "bookings_created": 49,
+      "oversold_by": 44,
+      "elapsed_s": 0.006
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 50,
+      "rejected": 0,
+      "station_booked": 50,
+      "bookings_created": 50,
+      "oversold_by": 45,
+      "elapsed_s": 0.0072
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 50,
+      "rejected": 0,
+      "station_booked": 50,
+      "bookings_created": 50,
+      "oversold_by": 45,
+      "elapsed_s": 0.0062
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 47,
+      "rejected": 3,
+      "station_booked": 47,
+      "bookings_created": 47,
+      "oversold_by": 42,
+      "elapsed_s": 0.006
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 47,
+      "rejected": 3,
+      "station_booked": 47,
+      "bookings_created": 47,
+      "oversold_by": 42,
+      "elapsed_s": 0.0075
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 48,
+      "rejected": 2,
+      "station_booked": 48,
+      "bookings_created": 48,
+      "oversold_by": 43,
+      "elapsed_s": 0.006
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 49,
+      "rejected": 1,
+      "station_booked": 49,
+      "bookings_created": 49,
+      "oversold_by": 44,
+      "elapsed_s": 0.0069
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 49,
+      "rejected": 1,
+      "station_booked": 49,
+      "bookings_created": 49,
+      "oversold_by": 44,
+      "elapsed_s": 0.0062
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 46,
+      "rejected": 4,
+      "station_booked": 46,
+      "bookings_created": 46,
+      "oversold_by": 41,
+      "elapsed_s": 0.0058
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 48,
+      "rejected": 2,
+      "station_booked": 48,
+      "bookings_created": 48,
+      "oversold_by": 43,
+      "elapsed_s": 0.0075
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 49,
+      "rejected": 1,
+      "station_booked": 49,
+      "bookings_created": 49,
+      "oversold_by": 44,
+      "elapsed_s": 0.0059
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 49,
+      "rejected": 1,
+      "station_booked": 49,
+      "bookings_created": 49,
+      "oversold_by": 44,
+      "elapsed_s": 0.0069
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 50,
+      "rejected": 0,
+      "station_booked": 50,
+      "bookings_created": 50,
+      "oversold_by": 45,
+      "elapsed_s": 0.0066
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 50,
+      "rejected": 0,
+      "station_booked": 50,
+      "bookings_created": 50,
+      "oversold_by": 45,
+      "elapsed_s": 0.0067
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 48,
+      "rejected": 2,
+      "station_booked": 48,
+      "bookings_created": 48,
+      "oversold_by": 43,
+      "elapsed_s": 0.0072
+    },
+    {
+      "threads": 50,
+      "quota": 5,
+      "successes": 48,
+      "rejected": 2,
+      "station_booked": 48,
+      "bookings_created": 48,
+      "oversold_by": 43,
+      "elapsed_s": 0.0062
+    }
+  ],
+  "verdict": "PASS"
+}
